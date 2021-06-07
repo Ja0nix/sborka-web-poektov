@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <!-- Код для переключения между Калькулятором и Таймером -->
     <button id="switcherCalc">Калькулятор</button>
     <button id="switcherTimer">Таймер</button>
 
@@ -29,12 +29,13 @@
 
     <form id="timer" style='display:none;'>
         <h3>Таймер</h3>
-        <label>
-            <strong>Таймер:</strong>
-            <input type="date" name="timerTime" />
-        </label>
-        <button type="submit">Старт</button>
-        <p id="timer__result"></p>
+
+        <div id="container">
+			<div id="inputArea">
+			</div>
+
+			<h1 id="time">0:00</h1>
+		</div>
     </form>
 </body>
 
