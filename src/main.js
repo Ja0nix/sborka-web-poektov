@@ -7,7 +7,6 @@ import { handleCalcSwitch, handleTimerSwitch } from "./switcher.js";
 //Timer  
 import { startCountdown } from "./timer.js";
 
-
 const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc__result");
 
@@ -36,8 +35,6 @@ dateCalcSwitcher.addEventListener("click", handleCalcSwitch);
 
 
 //Timer
-
-
 window.onload = function(){
 
 	// create input text box and give it an id of "min"
@@ -66,3 +63,4 @@ window.onload = function(){
     document.getElementById("inputArea").appendChild(stopButton);		
 
 }
+

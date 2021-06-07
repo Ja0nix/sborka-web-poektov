@@ -1,3 +1,5 @@
+import { playSound } from "./sound.js";
+
 let secondsRemaining;
 let intervalHandle;
 
@@ -28,7 +30,8 @@ export function tick(){
 
 	// stop is down to zero
 	if (secondsRemaining === 0){
-		alert("Done!");
+        playSound();
+		// alert("Done!");
 		clearInterval(intervalHandle);
 		resetPage();
 	}
