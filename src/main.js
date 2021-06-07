@@ -1,5 +1,6 @@
 import { diffDates, diffToHtml } from "./datecalc.js"; // 1
 import { formatError } from "./utils.js"; // 2
+
 //Timer Switcher 
 import { handleCalcSwitch, handleTimerSwitch } from "./switcher.js";
 
@@ -21,7 +22,6 @@ function handleCalcDates(event) {
     }
     else dateCalcResult.innerHTML = formatError("Для расчета промежутка необходимо заполнить оба поля"); // 5
 }
-
 
 //Timer Switcher 
 const dateCalcSwitcher = document.getElementById("switcherCalc");
