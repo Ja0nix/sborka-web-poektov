@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./sound.mp3":
+/*!*******************!*\
+  !*** ./sound.mp3 ***!
+  \*******************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"b01e67b80fc0ec7b821234f15fde6592.mp3\");\n\n//# sourceURL=webpack://sborka-web-poektov/./sound.mp3?");
+
+/***/ }),
+
 /***/ "./src/style.scss":
 /*!************************!*\
   !*** ./src/style.scss ***!
@@ -59,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _datecalc_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./datecalc.js */ \"./src/datecalc.js\");\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils.js */ \"./src/utils.js\");\n/* harmony import */ var _switcher_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./switcher.js */ \"./src/switcher.js\");\n/* harmony import */ var _timer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./timer.js */ \"./src/timer.js\");\n\r\n\r\n // 1\r\n // 2\r\n\r\n//Timer Switcher \r\n\r\n\r\n//Timer  \r\n\r\n\r\nconst dateCalcForm = document.getElementById(\"datecalc\");\r\nconst dateCalcResult = document.getElementById(\"datecalc__result\");\r\n\r\ndateCalcForm.addEventListener(\"submit\", handleCalcDates);\r\n\r\nfunction handleCalcDates(event) {\r\n    dateCalcResult.innerHTML = \"\";\r\n    event.preventDefault();\r\n\r\n    let { firstDate, secondDate } = event.target.elements;\r\n    firstDate = firstDate.value, secondDate = secondDate.value;\r\n\r\n    if (firstDate && secondDate) {\r\n        const diff = (0,_datecalc_js__WEBPACK_IMPORTED_MODULE_1__.diffDates)(firstDate, secondDate); // 3\r\n        dateCalcResult.innerHTML = (0,_datecalc_js__WEBPACK_IMPORTED_MODULE_1__.diffToHtml)(diff); // 4\r\n    }\r\n    else dateCalcResult.innerHTML = (0,_utils_js__WEBPACK_IMPORTED_MODULE_2__.formatError)(\"Для расчета промежутка необходимо заполнить оба поля\"); // 5\r\n}\r\n\r\n//Timer Switcher \r\nconst dateCalcSwitcher = document.getElementById(\"switcherCalc\");\r\nconst timerSwitcher = document.getElementById(\"switcherTimer\");\r\n\r\ntimerSwitcher.addEventListener(\"click\", _switcher_js__WEBPACK_IMPORTED_MODULE_3__.handleTimerSwitch);\r\ndateCalcSwitcher.addEventListener(\"click\", _switcher_js__WEBPACK_IMPORTED_MODULE_3__.handleCalcSwitch);\r\n\r\n\r\n//Timer\r\nwindow.onload = function(){\r\n\r\n\t// create input text box and give it an id of \"min\"\r\n\tvar inputMinutes = document.createElement(\"input\");\r\n\tinputMinutes.setAttribute(\"id\", \"minutes\");\r\n\tinputMinutes.setAttribute(\"type\", \"text\");\r\n\t\r\n\t//create a start button\r\n\tvar startButton = document.createElement(\"input\");\r\n\tstartButton.setAttribute(\"type\",\"button\");\r\n\tstartButton.setAttribute(\"value\",\"Start Countdown\");\r\n\tstartButton.onclick = function(){\r\n\t\t(0,_timer_js__WEBPACK_IMPORTED_MODULE_4__.startCountdown)();\r\n\t};\r\n\r\n    //create a stop button\r\n\tvar stopButton = document.createElement(\"input\");\r\n\tstopButton.setAttribute(\"type\",\"button\");\r\n\tstopButton.setAttribute(\"value\",\"Stop Countdown\");\r\n    stopButton.setAttribute(\"id\",\"stopCountdown\");\r\n\t\r\n\r\n\t//add to the DOM, to the div called \"inputArea\"\r\n\tdocument.getElementById(\"inputArea\").appendChild(inputMinutes);\r\n\tdocument.getElementById(\"inputArea\").appendChild(startButton);\r\n    document.getElementById(\"inputArea\").appendChild(stopButton);\t\t\r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://sborka-web-poektov/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _sound_mp3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sound.mp3 */ \"./sound.mp3\");\n/* harmony import */ var _datecalc_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./datecalc.js */ \"./src/datecalc.js\");\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils.js */ \"./src/utils.js\");\n/* harmony import */ var _switcher_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./switcher.js */ \"./src/switcher.js\");\n/* harmony import */ var _timer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./timer.js */ \"./src/timer.js\");\n\r\n\r\n\r\n // 1\r\n // 2\r\n\r\n//Timer Switcher \r\n\r\n\r\n//Timer  \r\n\r\n\r\nconst dateCalcForm = document.getElementById(\"datecalc\");\r\nconst dateCalcResult = document.getElementById(\"datecalc__result\");\r\n\r\ndateCalcForm.addEventListener(\"submit\", handleCalcDates);\r\n\r\nfunction handleCalcDates(event) {\r\n    dateCalcResult.innerHTML = \"\";\r\n    event.preventDefault();\r\n\r\n    let { firstDate, secondDate } = event.target.elements;\r\n    firstDate = firstDate.value, secondDate = secondDate.value;\r\n\r\n    if (firstDate && secondDate) {\r\n        const diff = (0,_datecalc_js__WEBPACK_IMPORTED_MODULE_2__.diffDates)(firstDate, secondDate); // 3\r\n        dateCalcResult.innerHTML = (0,_datecalc_js__WEBPACK_IMPORTED_MODULE_2__.diffToHtml)(diff); // 4\r\n    }\r\n    else dateCalcResult.innerHTML = (0,_utils_js__WEBPACK_IMPORTED_MODULE_3__.formatError)(\"Для расчета промежутка необходимо заполнить оба поля\"); // 5\r\n}\r\n\r\n//Timer Switcher \r\nconst dateCalcSwitcher = document.getElementById(\"switcherCalc\");\r\nconst timerSwitcher = document.getElementById(\"switcherTimer\");\r\n\r\ntimerSwitcher.addEventListener(\"click\", _switcher_js__WEBPACK_IMPORTED_MODULE_4__.handleTimerSwitch);\r\ndateCalcSwitcher.addEventListener(\"click\", _switcher_js__WEBPACK_IMPORTED_MODULE_4__.handleCalcSwitch);\r\n\r\n\r\n//Timer\r\nwindow.onload = function(){\r\n\r\n\t// create input text box and give it an id of \"min\"\r\n\tvar inputMinutes = document.createElement(\"input\");\r\n\tinputMinutes.setAttribute(\"id\", \"minutes\");\r\n\tinputMinutes.setAttribute(\"type\", \"text\");\r\n\t\r\n\t//create a start button\r\n\tvar startButton = document.createElement(\"input\");\r\n\tstartButton.setAttribute(\"type\",\"button\");\r\n\tstartButton.setAttribute(\"value\",\"Start Countdown\");\r\n\tstartButton.onclick = function(){\r\n\t\t(0,_timer_js__WEBPACK_IMPORTED_MODULE_5__.startCountdown)();\r\n\t};\r\n\r\n    //create a stop button\r\n\tvar stopButton = document.createElement(\"input\");\r\n\tstopButton.setAttribute(\"type\",\"button\");\r\n\tstopButton.setAttribute(\"value\",\"Stop Countdown\");\r\n    stopButton.setAttribute(\"id\",\"stopCountdown\");\r\n\t\r\n\r\n\t//add to the DOM, to the div called \"inputArea\"\r\n\tdocument.getElementById(\"inputArea\").appendChild(inputMinutes);\r\n\tdocument.getElementById(\"inputArea\").appendChild(startButton);\r\n    document.getElementById(\"inputArea\").appendChild(stopButton);\t\t\r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://sborka-web-poektov/./src/main.js?");
 
 /***/ }),
 
@@ -184,6 +195,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

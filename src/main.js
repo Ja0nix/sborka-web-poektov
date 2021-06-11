@@ -1,4 +1,5 @@
 import './style.scss';
+import sound from '../sound.mp3';
 
 import { diffDates, diffToHtml } from "./datecalc.js"; // 1
 import { formatError } from "./utils.js"; // 2
