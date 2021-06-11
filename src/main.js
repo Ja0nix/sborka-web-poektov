@@ -1,3 +1,5 @@
+import './style.scss';
+
 import { diffDates, diffToHtml } from "./datecalc.js"; // 1
 import { formatError } from "./utils.js"; // 2
 
